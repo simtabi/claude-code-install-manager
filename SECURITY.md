@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Email **`opensource@simtabi.com`**. If you require encryption, request
+Email **`security@simtabi.com`**. If you require encryption, request
 a PGP key in your first message and one will be sent in reply.
 
 **Do not open a public GitHub issue, pull request, or discussion
