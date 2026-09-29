@@ -2,8 +2,12 @@
 
 ## Reporting a vulnerability
 
-Email **`opensource@simtabi.com`**. If you require encryption, request
-a PGP key in your first message and one will be sent in reply.
+Use GitHub private vulnerability reporting: open a private report at
+<https://github.com/simtabi/claude-code-install-manager/security/advisories/new>.
+The report stays attached to the repository, with a draft advisory and a
+CVE request path. If you do not use GitHub, email
+**`security@simtabi.com`**; if you require encryption, request a PGP key
+in your first message and one will be sent in reply.
 
 **Do not open a public GitHub issue, pull request, or discussion
 thread for a security problem.** Public disclosure before a fix is
