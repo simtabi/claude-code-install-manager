@@ -12,10 +12,11 @@ paths for Authenticode-signing the launcher EXE:
    to the new docs. Either name works; this doc uses the original
    "Trusted Signing" because the GitHub Actions secret names
    (`AZURE_TRUSTED_SIGNING_*`) and the `azure/trusted-signing-action`
-   marketplace action still use that label. Microsoft's pricing page
-   for the Basic tier as of 2026-05 is **$9.99/month flat with
-   unlimited signing operations** — much cheaper than the per-signature
-   model in earlier announcements.
+   marketplace action still use that label. The Basic tier was quoted
+   at $9.99/month as of 2026-05 and carries a **5,000-signature monthly
+   quota**, with per-signature pricing above it; check the
+   [pricing page](https://azure.microsoft.com/pricing/details/artifact-signing/)
+   before relying on either figure.
 2. **PFX from a CA** (DigiCert, Sectigo, GlobalSign, SSL.com, Certum,
    etc.). The traditional approach. Simpler to wire up, but you are
    responsible for safeguarding the private key.
