@@ -7,6 +7,16 @@ paths for Authenticode-signing the launcher EXE:
    Recommended for new projects: no PFX file to store, OIDC-friendly,
    and signatures issued through this service build SmartScreen
    reputation faster than standard OV certs.
+   **As of 2026 the product has been rebranded "Azure Artifact Signing"**;
+   old `learn.microsoft.com/azure/trusted-signing/*` URLs still redirect
+   to the new docs. Either name works; this doc uses the original
+   "Trusted Signing" because the GitHub Actions secret names
+   (`AZURE_TRUSTED_SIGNING_*`) and the `azure/trusted-signing-action`
+   marketplace action still use that label. The Basic tier was quoted
+   at $9.99/month as of 2026-05 and carries a **5,000-signature monthly
+   quota**, with per-signature pricing above it; check the
+   [pricing page](https://azure.microsoft.com/pricing/details/artifact-signing/)
+   before relying on either figure.
 2. **PFX from a CA** (DigiCert, Sectigo, GlobalSign, SSL.com, Certum,
    etc.). The traditional approach. Simpler to wire up, but you are
    responsible for safeguarding the private key.
