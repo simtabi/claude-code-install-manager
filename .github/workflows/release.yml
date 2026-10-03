@@ -132,7 +132,7 @@ jobs:
 
       - name: Sign with Azure Trusted Signing
         if: steps.signmode.outputs.mode == 'azure'
-        uses: azure/trusted-signing-action@v2
+        uses: azure/trusted-signing-action@c7ab2a863ab5f9a846ddb8265964877ef296ee82 # v2.0.0
         with:
           azure-tenant-id:        ${{ secrets.AZURE_TENANT_ID }}
           azure-client-id:        ${{ secrets.AZURE_CLIENT_ID }}
@@ -198,7 +198,7 @@ jobs:
 
       - name: Create / update GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           tag_name: ${{ steps.ver.outputs.tag }}
           name:     "Claude Code Install Manager ${{ steps.ver.outputs.version }}"
