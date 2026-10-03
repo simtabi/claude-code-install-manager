@@ -1,5 +1,7 @@
 # Contributing to Claude Code Install Manager
 
+Where this file is silent, the [Simtabi contributing guide](https://github.com/simtabi/.github/blob/HEAD/CONTRIBUTING.md) applies.
+
 Thanks for considering a contribution. This project is a Windows-only
 batch script plus a small C# launcher and PowerShell tooling; the
 contribution surface area is small, the failure modes are subtle, and
