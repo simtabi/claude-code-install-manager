@@ -70,6 +70,35 @@ add that directory to your User PATH, broadcast the environment change so
 other applications notice, refresh PATH in the current shell, and verify the
 binary runs.
 
+## Quick start guide and usage
+
+### Getting started
+
+1. Close every terminal window (the whole window, not just the tab) and open a new one, so it
+   picks up the updated User PATH.
+2. Check the result with `claude-code-install-manager doctor`, and confirm `claude` resolves to
+   the CLI with `claude-code-install-manager where`.
+3. If `claude` launches the Claude Desktop App instead, run
+   `claude-code-install-manager disable-desktop-alias` (or toggle the alias off in Settings, see
+   [Troubleshooting](#claude-launches-the-desktop-app-instead-of-the-cli)).
+
+### Usage
+
+```bat
+claude-code-install-manager update
+```
+
+```bat
+claude-code-install-manager repair
+```
+
+```bat
+claude-code-install-manager install --download-only
+```
+
+Every [subcommand](#subcommands), [flag](#flags) and [environment variable](#environment-variables)
+is listed below; more scenarios are in [Examples](#examples) and [Troubleshooting](#troubleshooting).
+
 ## Usage
 
     claude-code-install-manager <subcommand> [flags]
